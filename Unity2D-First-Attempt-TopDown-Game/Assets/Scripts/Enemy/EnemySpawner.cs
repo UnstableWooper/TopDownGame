@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using Upgrades;
 using Random = UnityEngine.Random;
 
 namespace Enemy
@@ -21,12 +20,9 @@ namespace Enemy
         private GameObject[] _enemyCount;
 
         private GameObject _camera;
-        private Upgrade _upgrade;
-        
         void Start()
         {
             _camera = GameObject.FindGameObjectWithTag("MainCamera");
-            _upgrade = GetComponent<Upgrade>();
             
             StartRound = true;
         }
@@ -36,7 +32,6 @@ namespace Enemy
             if (StartRound)
             {
                 StartRound = false;
-                _upgrade.NewRound();
                 StartCoroutine(Wave(0));
                 
             }

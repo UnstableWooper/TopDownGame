@@ -27,8 +27,6 @@ public class Movement : MonoBehaviour
     {
         _controller = GetComponent<Controller>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _cursor = GameObject.FindGameObjectWithTag("Cursor");
     }
         
     // Update is called once per frame

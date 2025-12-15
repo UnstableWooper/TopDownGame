@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Weapons.Shotgun.Shoot
   bullet: {fileID: 933842924925584792, guid: 7611e9c5dca4eba44a89b560c2832bd9, type: 3}
-  accuracySpread: 20
+  accuracySpread: 10
   shots: 1
   shootCooldown: 0.5
   offset: 0
@@ -461,8 +461,8 @@ Canvas:
   m_GameObject: {fileID: 539943293}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1604263450}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -808,7 +808,6 @@ GameObject:
   - component: {fileID: 957632356}
   - component: {fileID: 957632358}
   - component: {fileID: 957632359}
-  - component: {fileID: 957632360}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -884,21 +883,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Points
   pointText: {fileID: 760465002}
---- !u!114 &957632360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957632355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69cd46bddc56ea24aa2ee9488935fb07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Upgrades.Upgrade
-  cards:
-  - {fileID: 287300518794137997, guid: 6ad8ef34fd04fa74d9f798f5df85825f, type: 3}
-  upgradeCardCount: 4
 --- !u!1 &1022371503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,7 +1485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Weapons.Sword.Sword
   bullet: {fileID: 933842924925584792, guid: 25d1dd4a28a80214ba65b0a91df2d680, type: 3}
-  accuracySpread: 50
+  accuracySpread: 25
   shots: 4
   shootCooldown: 2
   offset: 0
